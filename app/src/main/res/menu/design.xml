@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/booking"
+            android:icon="@drawable/ic_design"
+            android:title="Your Booking" />
+
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_design"
+            android:title="Booking History" />
+
+        <item
+            android:id="@+id/api"
+            android:icon="@drawable/ic_design"
+            android:title="Nearby" />
+
+
+        <item
+            android:id="@+id/emergency"
+            android:icon="@drawable/ic_design"
+            android:title="Emergency Contact" />
+
+
+        <item
+            android:id="@+id/refer"
+            android:icon="@drawable/ic_design"
+            android:title="Refer A Friend" />
+
+    </group>
+
+</menu>
