@@ -9,8 +9,10 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
+import com.kotlinproject.app.fragment.UserProfile
+import com.kotlinproject.app.model.User
 
-class ItemAdapter(val userList: ArrayList<User>, val activity: FragmentActivity?) : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class ItemAdapter(val userList: ArrayList<UserProfile>, val activity: FragmentActivity?) : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
     override fun getItemCount(): Int {
         return userList.size
     }

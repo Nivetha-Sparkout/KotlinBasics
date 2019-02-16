@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar
 import android.view.MenuItem
 import com.kotlinproject.app.fragment.BookingFragment
 import android.R.attr.fragment
+import android.content.Intent
 import android.widget.Toast
 import com.kotlinproject.app.fragment.ApiFragment
 import com.kotlinproject.app.fragment.ItemFragment
@@ -89,6 +90,15 @@ class NavigationActivity : AppCompatActivity() {
 
                     // Finishing the transition
                     transaction.commit()
+                }
+
+
+                R.id.database ->{
+
+                    val intent = Intent(applicationContext, DatabaseActivity::class.java)
+                    finish()
+                    startActivity(intent)
+
                 }
 
                 R.id.history -> {

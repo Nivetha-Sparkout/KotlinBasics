@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".NavigationActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DatabaseActivity"></activity>
     </application>
 
 </manifest>

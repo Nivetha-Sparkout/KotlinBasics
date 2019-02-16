@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.kotlinproject.app.ItemAdapter
 import com.kotlinproject.app.R
-import com.kotlinproject.app.User
+import com.kotlinproject.app.model.User
 
 
 class ItemFragment : Fragment() {
@@ -22,23 +22,23 @@ class ItemFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_item_list, container, false)
 
 
-        val users = ArrayList<User>()
-        users.add(User("Paul", "Mr"))
-        users.add(User("Jane", "Miss"))
-        users.add(User("John", "Dr"))
-        users.add(User("Amy", "Mrs"))
-        users.add(User("guna", "Mrs"))
-        users.add(User("savi", "Mrs"))
-        users.add(User("nisha", "Mrs"))
-        users.add(User("susi", "Mrs"))
-        users.add(User("meha", "Mrs"))
-        users.add(User("gayu", "Mrs"))
-        users.add(User("pragiya", "Mrs"))
-        users.add(User("suba", "Mrs"))
-        users.add(User("nive", "Mrs"))
-        users.add(User("praveen", "Mrs"))
-        users.add(User("suga", "Mrs"))
-        users.add(User("nashir", "Mrs"))
+        val users = ArrayList<UserProfile>()
+        users.add(UserProfile("Paul", "Mr"))
+        users.add(UserProfile("Jane", "Miss"))
+        users.add(UserProfile("John", "Dr"))
+        users.add(UserProfile("Amy", "Mrs"))
+        users.add(UserProfile("guna", "Mrs"))
+        users.add(UserProfile("savi", "Mrs"))
+        users.add(UserProfile("nisha", "Mrs"))
+        users.add(UserProfile("susi", "Mrs"))
+        users.add(UserProfile("meha", "Mrs"))
+        users.add(UserProfile("gayu", "Mrs"))
+        users.add(UserProfile("pragiya", "Mrs"))
+        users.add(UserProfile("suba", "Mrs"))
+        users.add(UserProfile("nive", "Mrs"))
+        users.add(UserProfile("praveen", "Mrs"))
+        users.add(UserProfile("suga", "Mrs"))
+        users.add(UserProfile("nashir", "Mrs"))
 
 
         val rv = view.findViewById<RecyclerView>(R.id.recyclerView)
