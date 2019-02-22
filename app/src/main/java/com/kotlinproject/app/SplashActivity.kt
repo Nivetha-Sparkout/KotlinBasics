@@ -8,8 +8,11 @@ import android.os.Handler
 import android.support.animation.DynamicAnimation
 import android.support.animation.SpringAnimation
 import android.support.animation.SpringForce
+import android.support.v4.app.FragmentActivity
+import android.support.v4.app.FragmentStatePagerAdapter
 import android.util.DisplayMetrics
 import android.view.animation.DecelerateInterpolator
+import com.ramotion.paperonboarding.PaperOnboardingEngine
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -46,7 +49,7 @@ class SplashActivity : AppCompatActivity() {
                                 }
 
                                 override fun onAnimationEnd(p0: Animator?) {
-                                    val intent = Intent(applicationContext, MainActivity::class.java)
+                                    val intent = Intent(applicationContext, PaperOnboardingActivity::class.java)
                                     finish()
                                     startActivity(intent)
                                     overridePendingTransition(0, 0)

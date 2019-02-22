@@ -19,6 +19,19 @@ class UserDetails : UserInterface {
         return realm.where(User::class.java).equalTo("ID", userId).findFirst()!!
     }
 
+
+    override fun editUser(realm: Realm, user: User): Boolean {
+        try {
+            realm.beginTransaction()
+            realm.insertOrUpdate(user)
+            realm.commitTransaction()
+            return true
+        } catch (e: Exception) {
+            println(e)
+            return false
+        }
+    }
+
     override fun deleteUser(realm: Realm, user: User): Boolean {
         try {
             realm.beginTransaction()

@@ -47,23 +47,48 @@
         android:hint="mobile number"
         android:inputType="number" />
 
-
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/saveBtn"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Save" />
+        android:gravity="center"
+        android:weightSum="3">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Save" />
 
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/DisplayBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Display" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/DisplayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Display" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/UpdateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Update" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Delete" />
+
+
+    </LinearLayout>
 
 
     <android.support.v7.widget.AppCompatTextView
@@ -73,5 +98,14 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:text="Display Details" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_individaul_displayDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Display individual FirstName" />
 
 </LinearLayout>

@@ -11,4 +11,5 @@ interface UserInterface {
     fun deleteUser(realm: Realm, user: User): Boolean
     fun removeLastUser(realm: Realm)
     fun getUsers(realm: Realm): RealmResults<User>
+    fun editUser(realm: Realm, student: User): Boolean
 }

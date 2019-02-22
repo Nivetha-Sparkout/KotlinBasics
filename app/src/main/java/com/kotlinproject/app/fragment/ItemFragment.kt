@@ -55,9 +55,10 @@ class ItemFragment : Fragment() {
 
 
     class SwipeHandler(val adapter: ItemAdapter, dragDirs: Int, swipeDirs: Int) : ItemTouchHelper.SimpleCallback(dragDirs, swipeDirs) {
-        override fun onMove(recyclerView: RecyclerView?, viewHolder: RecyclerView.ViewHolder?, target: RecyclerView.ViewHolder?): Boolean {
+        override fun onMove(p0: RecyclerView, p1: RecyclerView.ViewHolder, p2: RecyclerView.ViewHolder): Boolean {
             return false
         }
+
 
         override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
             adapter.removeRow(viewHolder.position)
